@@ -132,7 +132,24 @@ Adicione os arquivos modificados ao staging area:
 3. Faça um commit das alterações:
 
    git commit -m "Mensagem clara e concisa sobre as alterações"
-     Substitua "Mensagem clara e concisa sobre as alterações" por uma descrição detalhada do que você fez. Essa mensagem é importante para rastrear o histórico das suas alterações. 
+     Substitua "Mensagem clara e concisa sobre as alterações" por uma descrição detalhada do que você fez. Essa mensagem é importante para rastrear o histórico das suas alterações.
+
+4. Verifique a branch atual:
+     git branch
+     Isso mostrará em qual branch você está atualmente. 
+
+5. Faça o push para o repositório remoto:
+     git push origin nome_da_sua_branch
+     Substitua "nome_da_sua_branch" pelo nome da branch que você criou para essas alterações. 
+     Por exemplo, se você criou uma branch chamada "feature/login", você executaria:
+       git push origin feature/login
+
+Exemplo completo:
+   git status
+   git add .
+   git commit -m "Implementei o cadastro e login de usuários"
+   git branch
+   git push origin feature/login
 ------------------------------------------------------------------------------------
 👉 Criar cadastro, edição, listagem e exclusão de registros no banco de dados usando Laravel.
 
